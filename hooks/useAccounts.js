@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import web3 from '../ethereum/web3';
 const useAccounts = () => {
-  const [accounts, setAccounts] = useState();
+  const [accounts, setAccounts] = useState(null);
   useEffect(() => {
     const fetchAccounts = async () => {
       try {
